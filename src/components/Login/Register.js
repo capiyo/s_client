@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useForm, SubmitHandler } from "react-hook-form"
 import { Link } from 'react-router-dom'
-import { toast } from 'react-toastify'
+//import { toast } from 'react-toastify'
 
 export const Register = () => {
 
@@ -45,11 +45,11 @@ export const Register = () => {
         .then((res) => res.json())
         .then((result) => {
             console.log(result);
-            toast.success("Sign up successful")
+            //toast.success("Sign up successful")
             setRedirect(true)
         })
         .catch((err) => {
-            toast.error("Unable to signup")
+            //toast.error("Unable to signup")
             console.log(err);
         })
     }

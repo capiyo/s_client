@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useContext,useEffect } from 'react'
 import { useForm, SubmitHandler } from "react-hook-form"
-import { toast } from 'react-toastify'
+//import { toast } from 'react-toastify'
 import { LoginContext } from '../../components/ContextProvider/Context'
 
 
@@ -100,12 +100,12 @@ export const Update = () => {
             .then((res) => res.json())
             .then((result) => {
                 console.log(result);
-                toast.success("Job Posted Successfully")
+                //toast.success("Job Posted Successfully")
                 window.location.href = '/all-jobs';
             })
             .catch((error) => {
                 console.log(error);
-                toast.error("Failed to post job");
+                //toast.error("Failed to post job");
             });
 
     }

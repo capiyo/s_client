@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoURL from '../../assets/img/laptop.jpeg'
 import {FaBeer,FaBrain,FaTree,FaHeart, FaEye, FaRedRiver, FaMale, FaHandHolding}  from "react-icons/fa"
-import { ToastContainer,toast } from 'react-toastify'
 import { LoginContext } from '../ContextProvider/Context';
 import { useDispatch,useSelector} from "react-redux"
 
@@ -248,14 +247,14 @@ const showRequest=(jobId)=>{
         .then((res) => res.json())
         .then((result) => {
             console.log(result);
-            toast("Your Request was sent successfully")
+            //toast("Your Request was sent successfully")
 
             //setRequest(true)
           //  window.location.href = '/all-jobs';
         })
         .catch((error) => {
             console.log(error);
-            toast.error("Failed to aplly");
+           // toast.error("Failed to aplly");
         });
 
     console.log(jobId)

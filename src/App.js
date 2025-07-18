@@ -1,7 +1,6 @@
 
 import { Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
-import 'react-toastify/dist/ReactToastify.css';
 import { Home } from './Pages/Employer/Home';
 import { Navbar } from './components/Navbar';
 import { PostJob } from './Pages/Employer/PostJob';

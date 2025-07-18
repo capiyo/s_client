@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { useForm, SubmitHandler } from "react-hook-form"
-import { ToastContainer, toast } from 'react-toastify';
+//import { ToastContainer, toast } from 'react-toastify';
 import { LoginContext } from '../ContextProvider/Context';
 import { useNavigate } from 'react-router-dom';
 
@@ -32,14 +32,15 @@ export const Login = () => {
                     localStorage.setItem("user", JSON.stringify(result.user));
 
                     setLoginData(result.token)
-                    toast.success("Login successful")
+                    //toast.success("Login successful")
                     navigate('/'); 
                 }
                 else
-                    toast.error(result.error)
+                    console.log("Love")
+                //toast.error(result.error)
             })
             .catch((err) => {
-                toast.error("An error occured")
+              //  toast.error("An error occured")
                 console.log(err);
             })
     }

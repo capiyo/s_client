@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import LogoURL from '../../assets/img/mana.jpeg'
 import { useForm } from 'react-hook-form'
-import { SimilarJobs } from '../SimilarJobs'
-import { toast } from 'react-toastify'
 import { LoginContext } from '../ContextProvider/Context'
 import { Applicants } from '../../Pages/Employer/Applicants'
 

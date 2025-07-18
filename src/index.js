@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 import { Context } from './components/ContextProvider/Context';
-import { ToastContainer, toast } from 'react-toastify';
 import  {Provider} from 'react-redux'
 import { createStore, applyMiddleware, compose } from 'redux';
 import {Finder} from './components/Finder/Finder';
@@ -18,7 +17,6 @@ root.render(
   <Context>
     <BrowserRouter>
       <App />
-      <ToastContainer />
     </BrowserRouter>
   </Context>
   </Provider>

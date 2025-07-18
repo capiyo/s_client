@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useParams } from 'react-router-dom'
-import { toast } from 'react-toastify'
 
 
 export const UpdateJob = () => {
@@ -64,12 +63,12 @@ export const UpdateJob = () => {
         .then((res) => res.json())
         .then((result) => {
             console.log(result);
-            toast.success("Job Updated Successfully")
+           // toast.success("Job Updated Successfully")
             window.location.href = '/all-jobs';
         })
         .catch((error) => {
             console.log(error);
-            toast.error("Failed to update job");
+            //toast.error("Failed to update job");
         });
 
     }

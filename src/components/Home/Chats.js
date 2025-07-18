@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoURL from '../../assets/img/laptop.jpeg'
-import { toast } from 'react-toastify';
+//import { toast } from 'react-toastify';
 import { LoginContext } from '../ContextProvider/Context';
 import { useDispatch, useSelector } from 'react-redux';
 export const Chats = ({title}) => {
@@ -99,12 +99,12 @@ function Card({ applicants,title }) {
         .then((result) => {
             console.log(result);
             setAssin(false)
-            toast.success("Notiefiled successfully kindly  wait for his reply in your inbox or check thread chat")
+            //toast.success("Notiefiled successfully kindly  wait for his reply in your inbox or check thread chat")
             //window.location.href = '/all-jobs';
         })
         .catch((error) => {
             console.log(error);
-            toast.error("Failed to  To Notify,Please try again}");
+            //toast.error("Failed to  To Notify,Please try again}");
             setAssin(false)
         });
 
@@ -176,7 +176,7 @@ console.log(paymentData)
         })
         .catch((error) => {
             console.log(error);
-            toast.error("Payment Failed  kindly try again later");
+            //toast.error("Payment Failed  kindly try again later");
             setAssin(false)
         });
 

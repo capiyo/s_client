@@ -15,7 +15,7 @@ import { MdOutlineHeadsetMic, MdSpaceDashboard } from "react-icons/md";
 import { TbLayoutSidebarLeftCollapse, TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import {FaHeart}  from "react-icons/fa"
 import { LogOut } from 'lucide-react';
-import { toast } from 'react-toastify';
+//import { toast } from 'react-toastify';
 import {useDispatch} from "react-redux";
 import {Profile} from "./Home/profile";
 import Account from "../Pages/Candidate/Account";
@@ -118,7 +118,7 @@ export const Navbar = () => {
                     setLoginData(null)
                     localStorage.removeItem("usertoken")
                     window.location.href = "/";
-                    toast("You have successfully logged out")
+                    //toast("You have successfully logged out")
                 }
             })
     }

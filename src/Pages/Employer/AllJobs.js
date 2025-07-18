@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 // import '../../public/featuredJobs.json'
-import { toast } from 'react-toastify'
+//import { toast } from 'react-toastify'
 
 export const AllJobs = () => {
 
@@ -76,11 +76,11 @@ function HandlerDeleteJob(id){
         .then(res => res.json())
         .then(data => {
             // Handle the response data here
-            toast.success("Deleted successfully")
+            //oast.success("Deleted successfully")
         });
     } catch (error) {
         console.error("Error deleting job:", error);
-        toast.error("Unable to delete")
+      //  toast.error("Unable to delete")
     }
 }
 
